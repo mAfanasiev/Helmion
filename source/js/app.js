@@ -248,6 +248,16 @@ function postDate(sa, countryName, isAbbreviated) {
 
 $(document).ready(function () {
 
+    $("a").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        $('html').animate({ scrollTop: destination }, 1500);
+        /*if ($.browser.safari) {
+            $('body').animate({ scrollTop: destination }, 2500); //1100 - скорость
+        } else {
 
+        }*/
+        return false;
+    });
 });
 
