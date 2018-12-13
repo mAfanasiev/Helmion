@@ -70,7 +70,7 @@
     justify-content: space-between;
     background-image: url('../img/header__woman.png');
     background-repeat: no-repeat;
-    background-position: right 64px bottom;
+    background-position: right 64px bottom -308px;
   }
   &__des {
     width: 470px;
@@ -180,7 +180,7 @@
     &__content {
       padding-top: 30px;
       background-size: 660px;
-      background-position: right 105px bottom;
+      background-position: right 105px bottom -245px;
     }
     &__main-title {
       font-size: 50px;
@@ -233,6 +233,7 @@
       background-size: 640px;
       flex-wrap: wrap;
       padding-bottom: 30px;
+      background-position: right 105px bottom -235px;
     }
     &__des {
       width: 100%;
