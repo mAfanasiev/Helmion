@@ -246,18 +246,68 @@ function postDate(sa, countryName, isAbbreviated) {
     }
 }
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    $("a").click(function () {
-        var elementClick = $(this).attr("href");
-        var destination = $(elementClick).offset().top;
-        $('html').animate({ scrollTop: destination }, 1500);
-        /*if ($.browser.safari) {
-            $('body').animate({ scrollTop: destination }, 2500); //1100 - скорость
-        } else {
+//     $("a").click(function () {
+//         var elementClick = $(this).attr("href");
+//         var destination = $(elementClick).offset().top;
+//         $('html').animate({ scrollTop: destination }, 1500);
+//         /*if ($.browser.safari) {
+//             $('body').animate({ scrollTop: destination }, 2500); //1100 - скорость
+//         } else {
 
-        }*/
+//         }*/
+//         return false;
+//     });
+// });
+$(document).ready(function() {
+    $('a').click(function() {
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000);
+        }
         return false;
     });
 });
+(function($) {
+    $(window).on("load", function() {
+        $(".review-content").mCustomScrollbar();
+    });
+})(jQuery);
+var ind = 1;
+$('.review-btn__list').click(function() {
+    $('.review-content').toggleClass('review-scroll');
+    $(this).toggleClass('review-btn__list-after');
+    $(this).text($(this).text() == 'еще отзывы (13)' ? 'свернуть отзвывы' : 'еще отзывы (13)');
+});
+$('.star1').click(function() {
+    $('.add_star-current').css("width", "20%");
+});
+$('.star2').click(function() {
+    $('.add_star-current').css("width", "40%");
+});
+$('.star3').click(function() {
+    $('.add_star-current').css("width", "60%");
+});
+$('.star4').click(function() {
+    $('.add_star-current').css("width", "80%");
+});
+$('.star5').click(function() {
+    $('.add_star-current').css("width", "100%");
+});
+$('.review-btn__leave').click(function() {
+    $('.review-popup').addClass('review-popup_hide');
+});
+$('.add-review__close').click(function() {
+    $('.review-popup').removeClass('review-popup_hide');
+});
 
+$('.add-review__btn').click(function() {
+    $('.review-popup').removeClass('review-popup_hide');
+});
+$('.add-review__btn').click(function() {
+    $('.review-popup_last').addClass('review-popup_hide');
+});
+$('.review-popup_last__close').click(function() {
+    $('.review-popup_last').removeClass('review-popup_hide');
+});
