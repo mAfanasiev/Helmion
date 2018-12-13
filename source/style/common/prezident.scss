@@ -1,5 +1,109 @@
 .prezident {
+	padding-top: 99px;
+	padding-bottom: 70px;
 
+	&__emblem {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 11px;
+	}
+
+	&__subtitle {
+		margin-top: 10px;
+	}
+
+	&__conference {
+		margin-top: 49px;
+		display: flex;
+	}
+
+	&__img1 {
+		max-width: 570px;
+
+	}
+
+	&__quote  {
+		position: relative;
+		padding-top: 105px;
+		padding-left: 22px;
+		font-size: 18px;
+		line-height: 1.35;
+		color: #696f92;
+		font-weight: 500;
+		&::before {
+			content: '”';
+			position: absolute;
+			display: block;
+			font-size: 120px;
+			line-height: 120px;
+			font-family: 'PT Serif', serif;
+			top: 27px;
+			left: 17px;
+			color: $color-blue;
+			// transform: rotate(180deg);
+
+		}
+
+		blockquote {
+			margin: 0;
+		}
+		b {
+			display: block;
+			color: #3c3f52;
+
+		}
+	}
+	&__sign {
+		display: block;
+		margin-left: auto;
+		margin-top: 23px;
+		margin-right: 32px;
+	}
+	&__footnote {
+		text-align: right;
+		margin-top: 72px;
+		font-size: 17px;
+		font-weight: 400;
+		margin-right: 8px;
+	}
+
+	// prezident-table
+	&__table {
+		display: flex;
+	}
+
+	&__body {
+		display: flex;
+	}
+
+	&__cell {
+		padding: 5px 20px;
+		border: 1px solid #e5eaed;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__head-top {
+		height: 111px;
+		font-weight: bold;
+		span {
+			font-weight: normal;
+			color: #696f92;
+		}
+	}
+
+	&__row2 {
+		height: 140px;
+	}
+	&__row3 {
+		height: 240px;
+	}
+
+	&__row4 {
+		height: 150px;
+	}
 }
 
 @media screen and (max-width: 1190px) {
