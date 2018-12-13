@@ -261,3 +261,32 @@ $(document).ready(function () {
     });
 });
 
+
+$(document).ready(function () {
+
+ 
+    $('.prezident__body').slick({
+        slidesToShow: 3,
+        variableWidth: true,
+        infinite: true,
+             
+              
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true
+            }       
+        },
+        {
+            breakpoint: 768,
+             settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+    
+});

@@ -333,7 +333,7 @@
 
 @media screen and (max-width: 1190px) {
   .fat {
-	  padding-top: 60px;
+	  padding-top: 90px!important;
 	  padding-bottom: 60px;
 
     &__healthy,
@@ -366,7 +366,7 @@
 
 @media screen and (max-width: 1023px) {
   .fat {
-  	padding-top: 40px;
+  	padding-top: 50px!important;
   	padding-bottom: 40px;
 	
 	&__how-work::before {
@@ -514,7 +514,7 @@
 
 @media screen and (max-width: 767px) {
   .fat {
-  	padding-top: 30px;
+  	padding-top: 30px!important;
   	padding-bottom: 30px;
 
   	&__how-work::before {
@@ -623,7 +623,7 @@
 @media screen and (max-width: 639px) {
   .fat {
 	padding-bottom: 25px;
-	padding-top: 25px;
+	padding-top: 25px!important;
 
 	&__how-work-title {
 		font-size: 20px;
