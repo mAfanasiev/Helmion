@@ -1,27 +1,733 @@
 .fat {
+	padding-top: 180px;
+	padding-bottom: 44px; 
+
+	&__how-work::before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 256px;
+		width: 556px;
+		bottom: 70px;
+		left: 50%;
+		transform: translateX(-596px);
+		
+		// Background
+		background: transparent;
+		background-image: radial-gradient(white 39%, transparent 0);                
+		background-size: 20px 20px;
+		background-position: 0 0, 15px 15px;
+
+	}
+
+	&__how-work-title {
+		font-size: 28px;
+		color: #353334;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 29px;
+		font-weight: 900;
+	}
+
+	&__comparison {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 100%;
+			width: 2px;
+			background-color: #cdd0e3;
+			left: 50%;
+			transform: translateX(-50%);
+
+
+		}
+		
+		
+	}
+
+	&__healthy,
+	&__overweight {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		
+
+		h4 {
+			font-size: 21px;
+			color: #fff;
+			border-radius: 37px;
+			background-color: #7ec700;
+			min-width: 210px;
+
+			text-align: center;
+			line-height: 38px;
+			
+			margin-bottom: 30px;
+		}
+	}
+
+	&__demo {
+		color: $color-blue;
+		margin-bottom: 59px;
+		width: 100%;
+		
+		
+
+		img {
+			position: relative;
+		}
+
+		span {
+			position: absolute;
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+
+	&__origin {
+		position: relative;
+		min-height: 375px;
+	}
+
+	&__demo-healthy {
+
+		img {
+			left: 47px;
+    		top: 14px;
+    		max-width: 442px;
+		}
+
+		.fat__insulin {
+		    left: 72px;
+    		top: 219px;
+		}
+
+		.fat__glucose {
+			left: 128px;
+    		top: 327px;
+		}
+
+		.fat__cell {
+			font-size: 22px;
+			font-weight: bold;
+			left: 424px;
+			top: 16px;
+		}
+
+	}
+
+	&__demo-overweight {
+		
+		
+
+		img {
+			left: 41px;
+	    	top: 30px;
+	    	max-width: 416px;
+		}
+
+		.fat__insulin {
+		    left: 43px;
+   			top: 105px;
+		}
+
+		.fat__glucose {
+			left: 80px;
+    		top: 305px;
+		}
+
+		.fat__cell {
+			font-size: 22px;
+			font-weight: bold;
+			left: 381px;
+    		top: 106px;
+		}
+
+		.fat__lard {
+		    left: 391px;
+    		top: 20px;
+		}
+
+	}
+
+	
+
+	&__order {
+		
+		font-size: 17px;
+		counter-reset: section;
+		max-width: 445px;
+		margin-bottom: 18px;
+	}
+
+	&__order li {
+		padding-left: 45px;
+		position: relative;
+		margin-bottom: 20px;
+		font-weight: 500;
+		color: #3c3f52;
+		line-height: 1.2;
+		
+
+		&::before {
+			counter-increment: section;                
+  			content: "" counter(section);
+			display: block;
+			position: absolute;
+			height: 30px;
+			width: 30px;
+			background-color: #fff;
+			color: $color-blue;
+			font-weight: 500;
+			font-size: 22px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+
+
+		}
+	}
+
+	&__order-overweight {
+		margin-left: 64px;
+	}
+
+	&__order-healthy {
+		margin-left: 16px;
+	}
+
+
+
+	&__overweight h4 {
+		background-color: #f57373;
+	}
+
+	&__result {
+		background-color: #fff;
+		border: 2px solid #7ec700;
+		border-radius: 110px;
+		padding: 18px 26px;
+		padding-bottom: 22px;
+		margin-top: auto;
+		max-width: 570px;
+		padding-left: 90px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background-color: #7ec700;
+			border-radius: 50%;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-image: url(../img/fat-check.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		p {
+			font-size: 17px;
+			line-height: 1.3;
+		}
+
+		b {
+			font-size: 18px;
+			line-height: 1.23;
+		}
+	}
+
+	&__result-overweight  {
+		border-color: #f57373;
+
+		&::before {
+			background-color: #f57373;
+			background-image: url(../img/fat-cross.svg);
+		}
+	}
+
+	&__effects {
+		padding-left: 606px;
+		text-align: left;
+		margin-top: 53px;
+
+		h3 {
+			font-size: 28px;
+			color: #f57373;
+			text-align: left;
+			margin-bottom: 11px;
+		}
+
+		p {
+			font-size: 22px;
+			line-height: 1.37;
+		}
+	}
+
+	&__feels {
+		
+		&-title {
+			font-size: 40px;
+			margin-top: 36px;
+			margin-bottom: 44px;
+			position: relative;
+			z-index: 0;
+			&::before {
+				content: 'Больной ощущает:';
+				display: block;
+				position: absolute;
+				font-size: 60px;
+				color: #dee5eb;
+				top: -47px;
+    			left: -137px;
+				z-index: -1;
+				min-width: 550px;
+			}
+		}
+
+		li {
+			font-size: 18px;
+			margin-bottom: 32px;
+			padding-left: 58px;
+			position: relative;
+			color: #3c3f52;
+			font-weight: 500;
+
+			img {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-51%) translateX(-25%);
+				left: 0;
+			}
+		}
+
+		li:first-of-type img {
+			transform: translateY(-65%) translateX(-30%);
+		}
+	}
+
+	&__man {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-474px);
+		max-width: 349px;
+	}
+
+
 
 }
 
 @media screen and (max-width: 1190px) {
   .fat {
+	  padding-top: 60px;
+	  padding-bottom: 60px;
+
+    &__healthy,
+	&__overweight {
+		width: 50%;
+	}
+	  &__origin {
+	  	right: 20px;
+	  }
+
+	  &__result {
+	  	padding-left: 76px;
+	  	padding: 18px 13px;
+	  	padding-left: 64px;
+	  	max-width: 480px;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	&::before {
+	  		left: 12px;
+	  		width: 41px;
+    		height: 41px;
+	  	}
+	  }
+	&__effects {
+		padding-left: 515px;
+	}
 
   }
 }
 
 @media screen and (max-width: 1023px) {
   .fat {
+  	padding-top: 40px;
+  	padding-bottom: 40px;
+	
+	&__how-work::before {
+		width: 358px;
+		height: 162px;
+		transform: translateX(-438px);
+	}
 
+	&__how-work-title {
+		font-size: 26px;
+	}
+
+	&__healthy,
+	&__overweight {
+		img {
+			max-width: 320px;
+		}
+	}
+
+	&__demo {
+		margin-bottom: 36px;
+	}
+	&__origin {
+		min-height: 280px;
+	}
+
+	&__demo-healthy {
+
+		img {
+			
+    		max-width: 320px;
+		}
+
+		.fat__insulin {
+		    left: 72px;
+    		top: 111px;
+		}
+
+		.fat__glucose {
+			left: 93px;
+    		top: 235px;
+		}
+
+		.fat__cell {
+			left: 302px;
+    		top: 7px;
+		}
+
+	}
+
+	&__demo-overweight {
+		
+		
+
+		img {
+			
+	    	max-width: 320px;
+		}
+
+		.fat__insulin {
+		    left: 33px;
+    		top: 86px;
+		}
+
+		.fat__glucose {
+			left: 62px;
+    		top: 237px;
+		}
+
+		.fat__cell {
+			left: 281px;
+    		top: 87px;
+		}
+
+		.fat__lard {
+		    left: 298px;
+    		top: 17px;
+		}
+	}
+
+	
+	&__order-overweight {
+		margin-left: 30px;
+	}
+
+	&__order-healthy {
+		margin-left: 0;
+
+		li {
+			margin-bottom: 32px;
+		}
+	}
+	
+
+	&__result {
+		padding-top: 46px;
+		padding-left: 13px;
+		min-height: 150px;
+		max-width: 350px;
+		text-align: center;
+		&::before {
+			left: 50%;
+			top: 4px;
+			transform: translateX(-50%);
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		b {
+			font-size: 17px;
+		}
+	}
+
+	&__effects {
+		padding-left: 0;
+
+		h3 {
+			font-size: 27px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+
+	&__feels {
+		padding-left: 380px;
+	}
+
+	&__feels-title {
+		font-size: 36px;
+		&::before {
+			font-size: 56px;
+		}
+	}
+	&__man {
+		max-width: 236px;
+		transform: translateX(-371px);
+	}
+  	
   }
 }
 
 @media screen and (max-width: 767px) {
   .fat {
+  	padding-top: 30px;
+  	padding-bottom: 30px;
 
+  	&__how-work::before {
+  		display: none;
+  	}
+
+  	&__how-work-title {
+		font-size: 22px;
+	}
+
+  	&__comparison {
+  		flex-wrap: wrap;
+  		&::before {
+  			display: none;
+  		}
+  	}	
+  	&__healthy,
+	&__overweight {
+		width: 100%;
+	}
+
+	&__demo {
+		margin-bottom: 30px;
+	}
+	&__origin {
+		max-width: 390px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	&__healthy li {
+		margin-bottom: 20px;
+		
+	}
+
+	&__overweight {
+		margin-top: 30px;
+	}
+
+	&__order {
+		font-size: 15px;
+	}
+
+	&__result {
+		max-width: 450px;
+		padding-top: 60px;
+		&::before {
+			top: 12px;
+		}
+	}
+	
+	&__effects  {
+		h3 {
+			font-size: 24px;
+		}
+
+		p {
+			font-size: 17px;
+		}
+		
+	}
+
+
+	&__feels {
+		padding-left: 0;
+
+		ul {
+			text-align: center;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		li {
+			padding-left: 0;
+			padding-top: 20px;
+			width: 50%;
+
+			img {
+				left: 50%;
+				top: -20px;
+				transform: translateX(-50%)!important;
+			}
+
+			&:last-of-type {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+	&__feels-title {
+		font-size: 32px;
+		text-align: center;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	&__man {
+		display: none;
+	}
   }
 }
 
 @media screen and (max-width: 639px) {
   .fat {
+	padding-bottom: 25px;
+	padding-top: 25px;
 
+	&__how-work-title {
+		font-size: 20px;
+	}
+
+	&__comparison h4 {
+		font-size: 18px;
+	}
+	&__demo {
+		margin-bottom: 18px;
+	}
+	&__origin {
+		max-width: 300px;
+		min-height: 230px;
+	}
+	&__demo-healthy {
+
+
+
+		span {
+			font-size: 15px;
+		}	
+		img {
+			
+    		max-width: 250px;
+		}
+
+		.fat__insulin {
+		    left: 56px;
+    		top: 82px;
+		}
+
+		.fat__glucose {
+			left: 75px;
+    		top: 185px;
+		}
+
+		.fat__cell {
+			left: 246px;
+    		top: 7px;
+    		font-size: 18px;
+		}
+
+	}
+
+	&__demo-overweight {
+		
+		
+		span {
+			font-size: 15px;
+		}
+		img {
+			
+	    	max-width: 250px;
+		}
+
+		.fat__insulin {
+		    left: 27px;
+    		top: 76px;
+		}
+
+		.fat__glucose {
+			left: 57px;
+    		top: 190px;
+		}
+
+		.fat__cell {
+		    left: 233px;
+    		top: 74px;
+    		font-size: 18px;
+		}
+
+		.fat__lard {
+	        left: 243px;
+    		top: 21px;
+
+		}
+	}
+	&__result {
+		padding: 60px 20px 18px 20px;
+	}
+
+	&__feels {
+		ul {
+			text-align: center;
+			display: block;		
+		}
+		li {
+			width: auto;
+			font-size: 16px;
+		}
+
+	}
+	&__feels-title {
+		font-size: 28px;
+	}
   }
+}
+
+
+@media screen and (max-width: 479px) {
+	.fat {
+		&__result {
+			padding: 60px 35px 18px 35px;
+		}
+	}
 }
