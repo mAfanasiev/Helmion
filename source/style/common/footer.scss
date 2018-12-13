@@ -1,6 +1,7 @@
 // desctop
 .footer {
-  padding: 130px 0 30px;
+  padding-top: 170px;
+  padding-bottom: 30px;
   color: #696f92;
   font-size: 18px;
   position: relative;
@@ -58,15 +59,29 @@
 
 
 // media
+@media screen and (max-width: 1190px) {
+  .footer {
+    padding-top: 100px;
+  }
+
+}
+
 @media screen and (max-width: 1023px) {
   .footer {
     font-size: 16px;
-    padding-top: 55px;
+    padding-top: 40px;
+  }
+  .footer__logo {
+    margin-right: 10px;
   }
 
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   .footer__right {
     display: none;
   }
