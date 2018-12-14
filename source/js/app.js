@@ -279,6 +279,11 @@ $('.review-btn__list').click(function() {
     $('.review-content').toggleClass('review-scroll');
     $(this).toggleClass('review-btn__list-after');
     $(this).text($(this).text() == 'еще отзывы (13)' ? 'свернуть отзвывы' : 'еще отзывы (13)');
+//     $('.mCSB_scrollTools').toggle(function () {
+//     $(".mCSB_scrollTools").css({opacity: "0"});
+// }, function () {
+//     $(".mCSB_scrollTools").css({opacity: "0.75"});
+// });
 });
 $('.star1').click(function() {
     $('.add_star-current').css("width", "20%");

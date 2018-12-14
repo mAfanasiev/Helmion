@@ -17,31 +17,34 @@
             position: relative;
 
             &:before {
-                content: "1";
+                content: "";
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-149%, -136%);
+                transform: translate(-243%, -167%);
                 color: #ffffff;
                 font-size: 240px;
                 font-weight: 900;
                 line-height: 1;
-                background: #fff;
-                background-image: radial-gradient(#f4f7f9 39%, transparent 0);
-                background-size: 20px 20px;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-position: -2px -2px, 12px -15px;
+                background: url(../img/order1-bg.svg) no-repeat;
+                width: 79px;
+height: 175px;
             }
 
             &:nth-child(2):before {
-                transform: translate(-135%, -136%);
-                content: "2";
+                background: url(../img/order2-bg.svg) no-repeat;
+                transform: translate(-152%, -167%);
+                content: "";
+                width: 123px;
+height: 175px;
             }
 
             &:nth-child(3):before {
-                transform: translate(-127%, -135%);
-                content: "3";
+                background: url(../img/order3-bg.svg) no-repeat;
+                transform: translate(-152%, -167%);
+                content: "";
+                width: 125px;
+height: 175px;
             }
 
             &-img {
@@ -143,11 +146,11 @@
             &_box {
 
 
-                &:before {transform: translate(-135%, -120%);}
+                &:before {transform: translate(-219%, -146%);}
 
-                &:nth-child(2):before {transform: translate(-135%, -120%);}
+                &:nth-child(2):before {transform: translate(-155%, -146%);}
 
-                &:nth-child(3):before {transform: translate(-135%, -120%);}
+                &:nth-child(3):before {transform: translate(-155%, -146%);}
 
                 &-img {
                     width: 277px;
@@ -195,11 +198,11 @@
             &_box {
 
 				
-                &:before {transform: translate(-135%, -120%);font-size: 190px;}
+                &:before {    transform: translate(-168%, -109%);background-size: 80%;}
 
-                &:nth-child(2):before {transform: translate(-135%, -120%);}
+                &:nth-child(2):before {    transform: translate(-118%, -109%);background-size: 80%;}
 
-                &:nth-child(3):before {transform: translate(-135%, -120%);}
+                &:nth-child(3):before {    transform: translate(-118%, -109%);background-size: 80%;}
 
                 &-img {
                     width: 205px;
@@ -249,11 +252,11 @@
             &_box {
 
 				
-                &:before {transform: translate(-135%, -130%);font-size: 160px;}
+                &:before {transform: translate(-135%, -130%);background-size: 70%; height: 140px;}
 
-                &:nth-child(2):before {transform: translate(-135%, -130%);}
+                &:nth-child(2):before {transform: translate(-95%, -130%);background-size: 70%; height: 140px;}
 
-                &:nth-child(3):before {transform: translate(-135%, -130%);}
+                &:nth-child(3):before {transform: translate(-95%, -130%);background-size: 70%; height: 140px;}
 
                 &-img {
                     width: 175px;
@@ -307,11 +310,11 @@
             	margin-top: 30px;
 				width: 100%;
 				
-                &:before {transform: translate(-165%, -99%);font-size: 160px;}
+                &:before {    transform: translate(-179%, -99%);;font-size: 160px;}
 
-                &:nth-child(2):before {transform: translate(-165%, -99%);}
+                &:nth-child(2):before {transform: translate(-125%, -99%);}
 
-                &:nth-child(3):before {transform: translate(-165%, -99%);}
+                &:nth-child(3):before {transform: translate(-125%, -99%);}
 
                 &-img {
                     width: 175px;
