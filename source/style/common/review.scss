@@ -315,25 +315,24 @@
     }
 
     &__btn {
-        text-decoration: none;
-        outline: none;
-        display: block;
-        padding: 12px 40px;
+        
         margin: 10px auto;
-        border-radius: 30px;
-        background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
-        background-position: 100% 0;
-        background-size: 200% 200%;
-        font-size: 24px;
-        font-weight: 300;
-        color: white;
-        box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
-        transition: .5s;
-
-        &:hover {
-            box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
-            background-position: 0 0;
-        }
+       width: 220px;
+            height: 57px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            background-image: linear-gradient(to right, #63c000 0%, #7ec700 51%, #63c000 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-family: "Roboto";
+            font-size: 21px;
+            font-weight: 900;
+            line-height: 1;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            border: 0;
     }
 
     .review-user__ratingAdd {
@@ -459,7 +458,7 @@
         }
         &-reviews{
            
-            align-items: center;
+      
         }
         &-user{
             &__rtitle{
@@ -651,5 +650,7 @@
 }
 .review-scroll{
     height: 100% !important;
-    overflow: inherit !important;
+    -ms-overflow-style: none !important;
+    overflow: auto !important;
 }
+body::-webkit-scrollbar { display: none;  }
