@@ -341,13 +341,25 @@
 }
 
 @media screen and (max-width: 1190px) {
-  .fat {
-	  padding-top: 90px!important;
+  .fat.section {
+  	padding-top: 90px;
 	  padding-bottom: 60px;
-
+  }
+  .fat {
+	  
+	&__how-work-title {
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
     &__healthy,
 	&__overweight {
 		width: 50%;
+		h4 {
+			margin-bottom: 20px;
+		}
+	}
+	&__demo {
+		margin-bottom: 34px;
 	}
 	  &__origin {
 	  	right: 20px;
@@ -375,9 +387,12 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .fat {
-  	padding-top: 50px!important;
+  .fat.section {
+  	padding-top: 50px;
   	padding-bottom: 40px;
+  }
+  .fat {
+  	
 	
 	&__how-work::before {
 		width: 358px;
@@ -494,6 +509,7 @@
 
 	&__effects {
 		padding-left: 0;
+		margin-top: 35px;
 
 		h3 {
 			font-size: 27px;
@@ -510,6 +526,7 @@
 
 	&__feels-title {
 		font-size: 36px;
+		margin-bottom: 36px;
 		&::before {
 			font-size: 56px;
 		}
@@ -523,9 +540,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .fat.section {
+  	padding-top: 30px;
+  	padding-bottom: 0px;
+  }
   .fat {
-  	padding-top: 30px!important;
-  	padding-bottom: 30px;
+  	
 
   	&__how-work::before {
   		display: none;
@@ -533,6 +553,8 @@
 
   	&__how-work-title {
 		font-size: 22px;
+		margin-top: 18px;
+		margin-bottom: 18px;
 	}
 
   	&__comparison {
@@ -618,6 +640,8 @@
 	&__feels-title {
 		font-size: 32px;
 		text-align: center;
+		margin-top: 26px;
+		margin-bottom: 32px;
 
 		&::before {
 			display: none;
@@ -631,9 +655,12 @@
 }
 
 @media screen and (max-width: 639px) {
+  .fat.section {
+  	padding-bottom: 2px;
+	padding-top: 25px;
+  }
   .fat {
-	padding-bottom: 25px;
-	padding-top: 25px!important;
+	
 
 	&__how-work-title {
 		font-size: 20px;
@@ -712,6 +739,9 @@
 
 		}
 	}
+	&__order {
+		margin-bottom: 0px;
+	}
 	&__result {
 		padding: 60px 20px 18px 20px;
 	}
@@ -729,6 +759,12 @@
 	}
 	&__feels-title {
 		font-size: 28px;
+	}
+	&__effects {
+		margin-top: 20px;
+	}
+	&__feels-title {
+		margin-top: 18px;
 	}
   }
 }

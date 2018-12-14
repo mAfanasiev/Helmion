@@ -248,7 +248,10 @@
   .technology {
 	padding-top: 60px;
 	padding-bottom: 60px;
-
+	
+	&__flex {
+		margin-top: 34px;
+	}
 	&__item {
 		max-width: 230px;
 	}
@@ -302,6 +305,7 @@
   .technology {
 
   	&__flex {
+  		margin-top: 70px;
   		&::before {
   			content: '';
   			display: block;
@@ -416,6 +420,9 @@
   	padding-bottom: 30px;
   }
   .technology {
+  	&__flex {
+  		margin-top: 20px;
+  	}
   	&__item {
   		flex-direction: column;
   		margin-left: 96px;
@@ -486,6 +493,9 @@
 			flex-direction: column;
 			align-items: center;
 			
+		}
+		&__prod {
+			margin-bottom: 20px;
 		}
 
 	}

@@ -422,6 +422,7 @@
 		padding-bottom: 40px;
 	}
 	&__conference {
+		margin-top: 32px;
 		&::before {
 			width: 320px;
 			transform: translateX(-219px);
@@ -530,6 +531,7 @@
 	}
 	// prezident__bottom
 	&__bottom {
+		padding-top: 20px;
 		&::before {
 			display: none;
 		}
@@ -565,9 +567,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .prezident.section {
+
+	padding-bottom: 15px;
+  }
   .prezident {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	
 	&__conference {
 		display: block;
 		margin-top: 24px;
@@ -655,6 +660,10 @@
 }
 
 @media screen and (max-width: 479px) {
+	  .prezident.section {
+  	
+		padding-bottom: 10px;
+	  }
 	.prezident {
 		&__img1 {
 			width: 90%;
@@ -672,6 +681,9 @@
 			display: inline-block;
 		}
 		// prezident__table
+		&__table {
+			margin-top: 18px;
+		}
 		&__head {
 			width: 117px;
 			.prezident__cell{
