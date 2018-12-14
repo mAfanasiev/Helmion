@@ -302,9 +302,9 @@ $('.add-review__close').click(function() {
     $('.review-popup').removeClass('review-popup_hide');
 });
 
-<<<<<<< HEAD
 
-$(document).ready(function () {
+
+
 
  
     $('.prezident__body').slick({
@@ -331,7 +331,7 @@ $(document).ready(function () {
         }]
     });
     
-=======
+
 $('.add-review__btn').click(function() {
     $('.review-popup').removeClass('review-popup_hide');
 });
@@ -340,5 +340,5 @@ $('.add-review__btn').click(function() {
 });
 $('.review-popup_last__close').click(function() {
     $('.review-popup_last').removeClass('review-popup_hide');
->>>>>>> a0be61f4249dc18bbfa0b1de73ed4a39e8786beb
+
 });

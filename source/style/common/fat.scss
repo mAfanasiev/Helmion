@@ -10,7 +10,7 @@
 		width: 556px;
 		bottom: 70px;
 		left: 50%;
-		transform: translateX(-596px);
+		transform: translateX(-590px);
 		
 		// Background
 		background: transparent;
@@ -24,7 +24,7 @@
 		font-size: 28px;
 		color: #353334;
 		text-align: center;
-		margin-top: 30px;
+		margin-top: 28px;
 		margin-bottom: 29px;
 		font-weight: 900;
 	}
@@ -46,7 +46,11 @@
 
 
 		}
-		
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				&::before {
+					left: 50.6%;
+				}
+			}
 		
 	}
 
@@ -93,6 +97,7 @@
 	&__origin {
 		position: relative;
 		min-height: 375px;
+		left: 6px;
 	}
 
 	&__demo-healthy {
@@ -199,11 +204,11 @@
 	}
 
 	&__order-overweight {
-		margin-left: 64px;
+		margin-left: 76px;
 	}
 
 	&__order-healthy {
-		margin-left: 16px;
+		margin-left: 27px;
 	}
 
 
@@ -220,7 +225,7 @@
 		padding-bottom: 22px;
 		margin-top: auto;
 		max-width: 570px;
-		padding-left: 90px;
+		padding-left: 98px;
 		position: relative;
 
 		&::before {
@@ -231,7 +236,7 @@
 			height: 50px;
 			background-color: #7ec700;
 			border-radius: 50%;
-			left: 20px;
+			left: 28px;
 			top: 50%;
 			transform: translateY(-50%);
 			background-image: url(../img/fat-check.svg);
@@ -260,7 +265,7 @@
 	}
 
 	&__effects {
-		padding-left: 606px;
+		padding-left: 609px;
 		text-align: left;
 		margin-top: 53px;
 
@@ -274,6 +279,10 @@
 		p {
 			font-size: 22px;
 			line-height: 1.37;
+			color: #696f92;
+		}
+		b {
+			color: #3c3f52;
 		}
 	}
 
@@ -323,7 +332,7 @@
 		position: absolute;
 		left: 50%;
 		bottom: 0;
-		transform: translateX(-474px);
+		transform: translateX(-467px);
 		max-width: 349px;
 	}
 
@@ -342,6 +351,7 @@
 	}
 	  &__origin {
 	  	right: 20px;
+	  	left: auto;
 	  }
 
 	  &__result {
