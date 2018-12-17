@@ -661,6 +661,7 @@
   	}
   	&__img2 {
   		max-width: 150px;
+
   	}
   	&__figcaption {
   		margin-left: 10px;
@@ -762,6 +763,11 @@
 		}
 		&__bottom-text {
 			font-size: 15px;
+		}
+
+		&__img2 {
+			width: 30%;
+			align-self: flex-end;
 		}
 	}
 }
