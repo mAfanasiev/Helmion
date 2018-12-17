@@ -307,7 +307,7 @@ $('.add-review__close').click(function() {
     $('.review-popup').removeClass('review-popup_hide');
 });
 
- 
+
     $('.prezident__body').slick({
         slidesToShow: 3,
         variableWidth: true,
@@ -332,6 +332,7 @@ $('.add-review__close').click(function() {
         }]
     });
 
+
 $('.add-review__btn').click(function() {
     $('.review-popup').removeClass('review-popup_hide');
 });
@@ -340,6 +341,7 @@ $('.add-review__btn').click(function() {
 });
 $('.review-popup_last__close').click(function() {
     $('.review-popup_last').removeClass('review-popup_hide');
+
 });
 
 $('.consist__open').click(function () {
@@ -351,4 +353,5 @@ $('.consist__open').click(function () {
         $(this).text('Смотреть весь состав');
 
     }
+
 });
