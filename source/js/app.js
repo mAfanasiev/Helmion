@@ -305,12 +305,9 @@ function myFunction(x) {
   }
 }
 
-var x = window.matchMedia("(max-width: 1190px)")
-myFunction(x) 
-x.addListener(myFunction) 
-
-
-click = 1;
+function myFunction1(x) {
+  if (y.matches) { 
+    click = 1;
 $('.review-btn__list').click(function() {
     if (click) {
         $(".review-content").mCustomScrollbar("disable");
@@ -320,8 +317,28 @@ $('.review-btn__list').click(function() {
         click = 1;
     }
 });
+  } else {
+     $(".review-content").mCustomScrollbar("disable");
+  }
+}
+var y = window.matchMedia("(min-width: 1191px)")
+myFunction1(y) 
+y.addListener(myFunction) 
 
 
+
+function myFunction(x) {
+  if (x.matches) { 
+    $(".review-content").mCustomScrollbar("disable");
+     $('.review-btn__list').addClass('dflex')
+  } else {
+    $(".review-content").mCustomScrollbar("update");
+    $('.review-btn__list').removeClass('dflex')
+  }
+}
+var x = window.matchMedia("(max-width: 1190px)")
+myFunction(x) 
+x.addListener(myFunction) 
 $('.review-btn__list').click(function() {
     $('#mCSB_1_container').toggleClass('scrlt0');
     $('.review-content').toggleClass('review-scroll');
