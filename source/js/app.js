@@ -295,18 +295,9 @@ $(document).ready(function() {
     });
 })(jQuery);
 
-function myFunction(x) {
-  if (x.matches) { 
-    $(".review-content").mCustomScrollbar("disable");
-     $('.review-btn__list').addClass('dflex')
-  } else {
-    $(".review-content").mCustomScrollbar("update");
-    $('.review-btn__list').removeClass('dflex')
-  }
-}
 
-function myFunction1(x) {
-  if (y.matches) { 
+
+if (window.matchMedia("(min-width: 1191px)").matches) {
     click = 1;
 $('.review-btn__list').click(function() {
     if (click) {
@@ -317,14 +308,9 @@ $('.review-btn__list').click(function() {
         click = 1;
     }
 });
-  } else {
-     $(".review-content").mCustomScrollbar("disable");
-  }
+} else {
+  /* the viewport is less than 400 pixels wide */
 }
-var y = window.matchMedia("(min-width: 1191px)")
-myFunction1(y) 
-y.addListener(myFunction) 
-
 
 
 function myFunction(x) {
