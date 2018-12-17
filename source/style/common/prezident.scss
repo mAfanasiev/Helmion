@@ -418,7 +418,7 @@
 @media screen and (max-width: 1023px) {
   .prezident {
   	&.section{
-		padding-top: 48px;
+		padding-top: 55px;
 		padding-bottom: 40px;
 	}
 	&__conference {
@@ -588,14 +588,16 @@
 	}
 	&__quote {
 		font-size: 17px;
+		padding-left: 0;
 		&::before {
 			font-size: 56px;
-			left: 25px;
+			left: 0px;
 		}
 	}
 	&__sign {
 		float: right;
 		margin-top: 6px;
+		margin-right: 0;
 	}
 	&__footnote {
 		text-align: left;
@@ -607,12 +609,15 @@
 	&__table {
 		margin-top: 34px;
 	}
+	&__head {
+		max-width: 300px;
+	}
 	&__body {
-		width: 300px;
+		width: 376px;
 	}
 
 	&__col {
-		width: 300px;
+		width: 377px;
 	}
 	&__bottom-text {
 		padding-top: 26px;
@@ -636,6 +641,13 @@
   .prezident {
 	padding-top: 25px;
 	padding-bottom: 25px;
+
+	&__body {
+		width: 290px;
+	}
+	&__col {
+		width: 290px;
+	}
 	
 	&__bottom {
 		display: block;
@@ -654,6 +666,12 @@
   		margin-left: 10px;
   		margin-top: 60px;
 
+  	}
+  	&__bottom-text {
+  		padding-left: 0;
+  		&::before {
+  			left: 0;
+  		}
   	}
   }
 
@@ -679,13 +697,15 @@
 			float: right;
 			max-width: 100px;
 			display: inline-block;
+			margin-left: 10px;
 		}
 		// prezident__table
 		&__table {
 			margin-top: 18px;
 		}
 		&__head {
-			width: 117px;
+			max-width: 250px;
+			width: 57%;
 			.prezident__cell{
 				font-size: 14px;
 				padding-left: 4px;
