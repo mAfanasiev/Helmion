@@ -565,7 +565,7 @@ input::-ms-clear {
 
 .subtitle {
   text-align: center;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1;
 }
@@ -595,6 +595,9 @@ input::-ms-clear {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .subtitle {
+    font-size: 24px;
+  }
   .title {
     font-size: 36px;
   }
@@ -604,6 +607,9 @@ input::-ms-clear {
   .section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .subtitle {
+    font-size: 20px;
   }
   .wrapper {
     max-width: 768px;
@@ -615,7 +621,7 @@ input::-ms-clear {
 
 @media screen and (max-width: 767px) {
   .section {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
   }
   .wrapper {
@@ -628,13 +634,19 @@ input::-ms-clear {
 
 @media screen and (max-width: 639px) {
   .section {
-    padding-top: 25px;
+    padding-top: 55px;
     padding-bottom: 25px;
   }
   .wrapper {
     max-width: 480px;
   }
+  .subtitle {
+    font-size: 18px;
+  }
   .title {
+    & br {
+      display: none;
+    }
     font-size: 24px;
   }
 }

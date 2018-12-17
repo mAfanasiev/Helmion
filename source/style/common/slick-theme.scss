@@ -108,7 +108,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         content: '';
-        background-image: url('../img/slider__arrow.svg');
+
         background-repeat: no-repeat;
         width: 18px;
         height: 11px;
@@ -126,7 +126,6 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         content: '';
-        background-image: url('../img/slider__arrow.svg');
         background-repeat: no-repeat;
         transform: scale(-1);
         width: 18px;

@@ -321,10 +321,6 @@ $('.add-review__close').click(function() {
 
 
 
-
-
-
-
 $('.prezident__body').slick({
     slidesToShow: 3,
     variableWidth: true,
@@ -353,7 +349,6 @@ $('.prezident__body').slick({
 
 
 
-
 $('.add-review__btn').click(function() {
     $('.review-popup').removeClass('review-popup_hide');
 });
@@ -372,6 +367,18 @@ function recClose() {
 recClose();
 $('.recommendation-btn').on('click', function () {
     this.parentElement.parentElement.classList.toggle("content-plus");
+
+});
+
+$('.consist__open').click(function () {
+    $('.consist__items--wrap').toggleClass('active');
+    if($('.consist__items--wrap').hasClass('active')) {
+        $(this).text('Свернуть состав');
+
+    } else {
+        $(this).text('Смотреть весь состав');
+
+    }
 
 
 });
