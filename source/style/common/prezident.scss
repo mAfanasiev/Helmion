@@ -1,6 +1,6 @@
 .prezident {
 	padding-top: 99px;
-	padding-bottom: 70px;
+	padding-bottom: 65px;
 
 	&__emblem {
 		margin-left: auto;
@@ -25,7 +25,7 @@
 		    width: 600px;
 		    bottom: -18px;
 		    left: 50%;
-		    transform: translateX(-308px);
+		    transform: translateX(-300px);
 		    background: transparent;
 		    background-image: radial-gradient(#f4f7f9 39%, transparent 0);
 		    background-size: 20px 20px;
@@ -46,7 +46,7 @@
 	&__quote  {
 		position: relative;
 		padding-top: 105px;
-		padding-left: 22px;
+		padding-left: 30px;
 		font-size: 18px;
 		line-height: 1.35;
 		color: #696f92;
@@ -59,7 +59,7 @@
 			line-height: 120px;
 			font-family: 'PT Serif', serif;
 			top: 27px;
-			left: 17px;
+			left: 24px;
 			color: $color-blue;
 			// transform: rotate(180deg);
 
@@ -78,7 +78,7 @@
 		display: block;
 		margin-left: auto;
 		margin-top: 23px;
-		margin-right: 32px;
+		margin-right: 25px;
 		max-width: 193px;
 		height: auto;
 	}
@@ -87,7 +87,7 @@
 		margin-top: 72px;
 		font-size: 17px;
 		font-weight: 400;
-		margin-right: 8px;
+		
 	}
 
 	// prezident-table
@@ -110,6 +110,13 @@
 
 	&__col {
 		width: 300px;
+		outline: none;
+		&:hover {
+			outline: none;
+		}
+		&::active {
+			outline: none;
+		}
 	}
 
 	&__cell {
@@ -276,8 +283,8 @@
 		// margin-top: auto;
 		// margin-bottom: 83px;
 		align-self: flex-start;
-		margin-top: 180px;
-		margin-left: 25px;
+		margin-top: 178px;
+		margin-left: 31px;
 		font-size: 17px;
 		line-height: 1.2;
 		font-weight: 500;
@@ -304,8 +311,8 @@
 	}
 
 	&__bottom-text {
-		padding-top: 46px;
-		padding-left: 13px;
+		padding-top: 44px;
+		padding-left: 19px;
 		color: #696f92;
 		font-weight: 400;
 		font-size: 18px;
@@ -320,7 +327,7 @@
 			line-height: 120px;
 			font-family: 'PT Serif', serif;
 		    top: -30px;
-    		left: 8px;
+    		left: 15px;
 			color: $color-blue;
 
 		}
@@ -415,6 +422,7 @@
 		padding-bottom: 40px;
 	}
 	&__conference {
+		margin-top: 32px;
 		&::before {
 			width: 320px;
 			transform: translateX(-219px);
@@ -523,6 +531,7 @@
 	}
 	// prezident__bottom
 	&__bottom {
+		padding-top: 20px;
 		&::before {
 			display: none;
 		}
@@ -558,9 +567,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .prezident.section {
+
+	padding-bottom: 15px;
+  }
   .prezident {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	
 	&__conference {
 		display: block;
 		margin-top: 24px;
@@ -648,6 +660,10 @@
 }
 
 @media screen and (max-width: 479px) {
+	  .prezident.section {
+  	
+		padding-bottom: 10px;
+	  }
 	.prezident {
 		&__img1 {
 			width: 90%;
@@ -665,6 +681,9 @@
 			display: inline-block;
 		}
 		// prezident__table
+		&__table {
+			margin-top: 18px;
+		}
 		&__head {
 			width: 117px;
 			.prezident__cell{
