@@ -247,6 +247,11 @@
 
 @media screen and (max-width: 1023px) {
   .consist {
+    &__title {
+      & br {
+        display: none;
+      }
+    }
     &__content {
       flex-direction: column;
       align-items: center;
@@ -254,6 +259,12 @@
     &__mineral {
       width: 615px;
       margin-right: 0;
+    }
+    &__items--wrap.active {
+      height: 500px;
+    }
+    &__btn {
+      margin-top: 20px;
     }
   }
 }
@@ -267,5 +278,43 @@
 @media screen and (max-width: 639px) {
   .consist {
 
+    &__him {
+      display: none;
+    }
+    &__mineral {
+      width: 385px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .consist {
+
+    &__mineral {
+      width: 300px;
+    }
+    &__prod {
+      font-size: 0;
+      &::before,
+      &::after {
+        display: none;
+      }
+      width: 100%;
+      &--big {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+      }
+    }
+    &__items {
+      width: 100%;
+      &--wrap {
+        height: auto;
+      }
+    }
+    &__open {
+      display: none;
+    }
   }
 }
