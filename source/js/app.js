@@ -320,11 +320,7 @@ $('.add-review__close').click(function() {
 });
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 7dd16422f0091aa07adbbcf99f17ec26a7e0e205
 
 
 
@@ -350,16 +346,13 @@ $('.prezident__body').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-<<<<<<< HEAD
+
         }
     ]
 });
 
-=======
-        }]
-    });
-    
->>>>>>> 7dd16422f0091aa07adbbcf99f17ec26a7e0e205
+
+
 
 $('.add-review__btn').click(function() {
     $('.review-popup').removeClass('review-popup_hide');
@@ -369,7 +362,7 @@ $('.add-review__btn').click(function() {
 });
 $('.review-popup_last__close').click(function() {
     $('.review-popup_last').removeClass('review-popup_hide');
-<<<<<<< HEAD
+
 });
 
 function recClose() {
@@ -379,7 +372,6 @@ function recClose() {
 recClose();
 $('.recommendation-btn').on('click', function () {
     this.parentElement.parentElement.classList.toggle("content-plus");
-=======
 
->>>>>>> 7dd16422f0091aa07adbbcf99f17ec26a7e0e205
+
 });
