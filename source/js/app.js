@@ -262,6 +262,8 @@ function postDate(sa, countryName, isAbbreviated) {
 //         return false;
 //     });
 // });
+
+
 $(document).ready(function() {
     $('.gorev').click(function() {
         var scroll_el = $(this).attr('href');
@@ -293,7 +295,19 @@ $(document).ready(function() {
     });
 })(jQuery);
 
+function myFunction(x) {
+  if (x.matches) { 
+    $(".review-content").mCustomScrollbar("disable");
+     $('.review-btn__list').addClass('dflex')
+  } else {
+    $(".review-content").mCustomScrollbar("update");
+    $('.review-btn__list').removeClass('dflex')
+  }
+}
 
+var x = window.matchMedia("(max-width: 1190px)")
+myFunction(x) 
+x.addListener(myFunction) 
 
 
 click = 1;
