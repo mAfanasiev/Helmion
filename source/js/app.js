@@ -263,6 +263,15 @@ function postDate(sa, countryName, isAbbreviated) {
 //     });
 // });
 $(document).ready(function() {
+    $('.gorev').click(function() {
+        var scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 200);
+        }
+        return false;
+    });
+});
+$(document).ready(function() {
     $('a').click(function() {
         var scroll_el = $(this).attr('href');
         if ($(scroll_el).length != 0) {
@@ -271,9 +280,16 @@ $(document).ready(function() {
         return false;
     });
 });
+
 (function($) {
     $(window).on("load", function() {
-        $(".review-content").mCustomScrollbar();
+        $(".review-content").mCustomScrollbar({
+            callbacks:{
+    onScrollStart:function(){
+      $('.review-btn__list').addClass('all-rev-none')
+    }
+}
+        });
     });
 })(jQuery);
 
@@ -293,9 +309,10 @@ $('.review-btn__list').click(function() {
 
 
 $('.review-btn__list').click(function() {
+    $('#mCSB_1_container').toggleClass('scrlt0');
     $('.review-content').toggleClass('review-scroll');
     $(this).toggleClass('review-btn__list-after');
-    $(this).text($(this).text() == 'еще отзывы (13)' ? 'свернуть отзвывы' : 'еще отзывы (13)');
+    $(this).text($(this).text() == 'еще отзывы (13)' ? 'свернуть отзывы' : 'еще отзывы (13)');
 });
 $('.star1').click(function() {
     $('.add_star-current').css("width", "20%");
