@@ -320,6 +320,7 @@ $('.add-review__close').click(function() {
 });
 
 
+
 $('.prezident__body').slick({
     slidesToShow: 3,
     variableWidth: true,
@@ -345,6 +346,7 @@ $('.prezident__body').slick({
         }
     ]
 });
+
 
 
 $('.add-review__btn').click(function() {
@@ -377,5 +379,6 @@ $('.consist__open').click(function () {
         $(this).text('Смотреть весь состав');
 
     }
+
 
 });
