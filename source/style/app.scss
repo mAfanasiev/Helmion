@@ -285,7 +285,10 @@ input::-ms-clear {
     }
   }
 }
-
+.color__black{
+  color: #3c3f52;
+  font-weight: 500;
+}
 .arrow__svg {
   cursor: pointer;
   position: absolute;
