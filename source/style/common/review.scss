@@ -409,10 +409,6 @@
     }
 }
 
-.review-popup_hide {
-    display: block;
-}
-
 .mCSB_scrollTools .mCSB_draggerRail {
     width: 12px;
     border-radius: 5px;
@@ -456,6 +452,7 @@
             margin-top: 25px;
             position: relative;
             z-index: 1;
+            overflow: hidden;
         }
         &-box__img{
             margin-right: 30px;
@@ -678,4 +675,8 @@
 }
 .dflex{
     display: flex;
+}
+
+.review-popup_hide {
+    display: block;
 }
