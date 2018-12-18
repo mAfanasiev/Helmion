@@ -40,6 +40,9 @@
     &:last-child {
       margin-right: 0;
     }
+    &--b {
+      font-weight: 500;
+    }
     &--ico {
       flex-shrink: 0;
       margin-right: 21px;
@@ -293,8 +296,7 @@
 @media screen and (max-width: 767px) {
   .header {
     &__nav {
-      flex-wrap: wrap;
-      justify-content: space-around;
+      display: none;
     }
     &__itm {
       width: 300px;
@@ -308,11 +310,13 @@
       }
     }
     &__content {
-      background-image: none;
+      padding-top: 10px;
+      background-size: 500px;
+      background-position: right 115px bottom -60px;
     }
     &__prod {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       &--big {
         position: static;
@@ -332,10 +336,9 @@
 @media screen and (max-width: 639px) {
   .header {
     padding-top: 10px;
-    &__nav {
-      display: none;
-    }
+
     &__content {
+      background-image: none;
       padding-top: 0px;
       justify-content: space-around;
     }

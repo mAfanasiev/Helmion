@@ -291,12 +291,12 @@ $(document).ready(function() {
              $(".review-content").mCustomScrollbar({
             callbacks:{
     onScrollStart:function(){
-      $('.review-btn__list').addClass('all-rev-none')
+
     }
 }
         });
         }else{
-           $('.review-content').mCustomScrollbar("disable"); 
+           $('.review-content').mCustomScrollbar("disable", true);
         }
     }).trigger("resize");
 })(jQuery);
