@@ -1,7 +1,7 @@
 .review {
     &-content {
         margin-top: 40px;
-        height: 516px;
+        height: 552px;
         max-height: 100%;
         overflow: auto;
         transition: all .4s ease-in-out;
@@ -482,6 +482,9 @@
         }
         .mCSB_inside > .mCSB_container{
             margin-right: 0;
+        }
+        .all-rev-none{
+            display: flex !important;
         }
 }
 

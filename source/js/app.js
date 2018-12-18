@@ -421,9 +421,8 @@ $('.add-review__btn').click(function () {
         $('.input__val-2').val("");
         $('.input__val-3').val("");
         $('.review-popup_last').addClass('review-popup_hide');
-        $('.add-review__btn').click(function () {
-           
-        });
+         $(".review-popup").removeClass('review-popup_hide');
+      
     } else {
         alert('Заполните поля');
     }
