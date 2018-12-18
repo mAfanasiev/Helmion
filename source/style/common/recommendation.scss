@@ -188,7 +188,7 @@
     .recommendation {
 
         &-content {
-            margin-top: 75px;
+            margin-top: 55px;
 
             &:before {
                 width: 1024px;
@@ -259,7 +259,7 @@
     .recommendation {
 
         &-content {
-            margin-top: 50px;
+            margin-top: 45px;
 
             &:before {
                 width: 768px;
@@ -342,6 +342,7 @@
 
             &_box {
                width: 100%;
+              
                &:not(:last-child) {
                    margin-bottom: 30px;
                 }
