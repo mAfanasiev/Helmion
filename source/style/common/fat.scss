@@ -402,6 +402,8 @@
 
 	&__how-work-title {
 		font-size: 26px;
+	    margin-top: 10px;
+    	margin-bottom: 15px;
 	}
 
 	&__healthy,
@@ -487,14 +489,15 @@
 	
 
 	&__result {
-		padding-top: 46px;
+		padding-top: 25px;
 		padding-left: 13px;
-		min-height: 150px;
+		
 		max-width: 350px;
 		text-align: center;
+		border-radius: 20px;
 		&::before {
 			left: 50%;
-			top: 4px;
+			top: -24px;
 			transform: translateX(-50%);
 		}
 
@@ -592,9 +595,9 @@
 
 	&__result {
 		max-width: 450px;
-		padding-top: 60px;
+		padding-top: 25px;
 		&::before {
-			top: 12px;
+			top: -24px;
 		}
 	}
 	
@@ -744,7 +747,8 @@
 		margin-bottom: 0px;
 	}
 	&__result {
-		padding: 60px 20px 18px 20px;
+		padding: 24px 20px 18px 20px;
+		margin-top: 20px;
 	}
 
 	&__feels {
@@ -777,7 +781,13 @@
 @media screen and (max-width: 479px) {
 	.fat {
 		&__result {
-			padding: 60px 35px 18px 35px;
+			margin-top: 14px;
+			padding: 24px 15px 18px 15px;
+		}
+		&__order {
+			margin-left: 0;
+			
+			max-width: 320px;
 		}
 	}
 }
