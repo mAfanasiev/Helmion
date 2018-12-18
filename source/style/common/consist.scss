@@ -277,7 +277,20 @@
 
 @media screen and (max-width: 639px) {
   .consist {
+    &__prod {
+      &::before {
+        width: 264px;
+        height: 264px;
+      }
+      &::after {
+        width: 298px;
+        height: 297px;
+      }
+      &--big {
+        width: 325px;
+      }
 
+    }
     &__him {
       display: none;
     }

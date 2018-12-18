@@ -218,6 +218,8 @@
     }
     &__logo {
       margin-right: 0;
+      line-height: 1;
+      margin-bottom: 20px;
       &::after {
         display: none;
       }
@@ -236,7 +238,8 @@
       background-size: 640px;
       flex-wrap: wrap;
       padding-bottom: 30px;
-      background-position: right 105px bottom -235px;
+      padding-top: 20px;
+      background-position: right 105px bottom -160px;
     }
     &__des {
       width: 100%;
@@ -383,5 +386,13 @@
         position: static;
       }
     }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .header {
+      &__item {
+        margin-bottom: 15px;
+      }
   }
 }
