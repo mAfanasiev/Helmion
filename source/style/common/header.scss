@@ -1,3 +1,389 @@
 .header {
+  &__head-logo {
+    display: flex;
+    width: 100%;
+    margin-top: 29px;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    max-width: 200px;
+  }
+  &__logo-link {
+    display: block;
+    width: 121px;
+  }
+  &__sub-logo {
+    color: $dark-green;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &__navigation {
+    display: block;
+    margin-top: 8px;
+  }
+  &__navigation-item {
+    display: inline-block;
+    max-width: 214px;
+    &.-recomendation {
+      max-width: 228px;
+    }
+  }
+  &__navigation-link {
+    display: inline-block;
+    max-width: 155px;
+    margin-right: 0;
+    margin-left: 13px;
+    text-align: left;
+    vertical-align: top;
+    &.-reviews {
+      padding-top: 8px;
+      padding-right: 29px;
+    }
+    span {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $grey;
+      border-bottom: 2px dotted $grey;
+    }
+  }
 
+  &__general-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /*1st-block*/
+  &__summary-info {
+    display: block;
+    max-width: 455px;
+  }
+  &__main-title {
+    margin-top: 39px;
+    margin-bottom: 40px;
+    color: $grey;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+  &__deuch-innovation {
+    display: block;
+    max-width: 310px;
+    margin-bottom: 62px;
+  }
+  &__flag {
+    display: inline-block;
+    width: 75px;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 20px;
+    padding-bottom: 21px;
+    border-bottom: 2px solid $light-green;
+  }
+  &__flag-title {
+    display: inline-block;
+    max-width: 200px;
+    color: $grey;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  &__all-bullets {
+    max-width: 350px;
+    padding-left: 57px;
+  }
+  &__bullet {
+    display: block;
+    max-width: 300px;
+  }
+  &__bullet-text {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $grey;
+    span {
+      color: $light-green;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    &:before {
+      display: block;
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      border-radius: 5px;
+      content: "";
+      background-color: $light-green;
+      background: url("../img/header-ok.png") center center no-repeat, $light-green;
+      top: 5px;
+      left: -58px;
+    }
+  }
+
+  /*2nd-block*/
+  &__product-box {
+    display: inline-block;
+    position: relative;
+    width: 440px;
+    z-index: 0;
+  }
+  &__family-bg {
+    display: block;
+    width: 546px;
+    height: 749px;
+    position: absolute;
+    z-index: 1;
+    top: -32px;
+    right: 70px;
+  }
+  &__family {
+    display: block;
+    width: 589px;
+    height: 774px;
+    position: absolute;
+    z-index: 2;
+    top: -32px;
+    right: -61px;
+  }
+  &__prod {
+    display: block;
+    position: absolute;
+    width: 462px;
+    z-index: 3;
+    bottom: -187px;
+    left: -47px;
+    img {
+      width: 100%;
+    }
+  }
+  &__prod-stick {
+    display: block;
+    width: 235px;
+    height: 406px;
+    position: absolute;
+    z-index: 3;
+    right: 26px;
+    bottom: -204px;
+    img {
+      width: 100%;
+    }
+  }
+
+  /*3rd-block*/
+  &__form {
+    display: inline-block;
+    width: 270px;
+    margin-top: 41px;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+@media all and (max-width: 1260px) {
+  .form::before {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1190px) {
+  .header {
+    &__summary-info {
+      display: block;
+      max-width: 312px;
+    }
+    &__main-title {
+      margin: 20px 0;
+      font-size: 35px;
+      line-height: 38px;
+    }
+    &__deuch-innovation {
+      margin-bottom: 30px;
+    }
+    &__product-box {
+      max-width: 420px;
+      width: 100%;
+    }
+    &__family-bg {
+      width: 430px;
+      height: auto;
+    }
+    &__family {
+      width: 540px;
+      height: 600px;
+      overflow: hidden;
+      top: 16px;
+      right: -56px;
+    }
+    &__prod {
+      width: 455px;
+      bottom: -204px;
+      left: -34px;
+    }
+    &__prod-stick {
+      width: 187px;
+      height: auto;
+      right: 32px;
+      bottom: -204px;
+    }
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .header {
+    &__head-logo {
+      margin-top: 0;
+    }
+    &__summary-info {
+      max-width: 100%;
+    }
+    &__deuch-innovation {
+      display: none;
+    }
+    &__all-bullets {
+      display: flex;
+      max-width: 100%;
+      padding-left: 0;
+    }
+    &__bullet {
+      margin-left: 50px;
+    }
+    &__bullet-text:before {
+      left: -48px;
+    }
+    &__family-bg {
+      display: none;
+    }
+    &__family {
+      width: 478px;
+      top: 2px;
+      right: -60px;
+    }
+    &__form {
+      margin-top: 5px;
+    }
+    &__prod {
+      width: 380px;
+      bottom: -77px;
+      left: 88px;
+    }
+    &__prod-stick {
+      width: 162px;
+      right: -31px;
+      bottom: -80px;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    &__logo {
+      margin: 0 auto;
+    }
+    &__sub-logo {
+      display: none;
+    }
+    &__navigation {
+      display: none;
+    }
+    &__general-container {
+      display: block;
+
+    }
+    &__main-title {
+      margin: 10px 0;
+      font-size: 30px;
+      line-height: 32px;
+    }
+    &__bullet-text {
+      font-size: 17px;
+      span {
+        font-size: inherit;
+      }
+      &:before {
+        width: 28px;
+        height: 28px;
+        left: -36px;
+      }
+    }
+    &__product-box {
+      max-width: 330px;
+      width: 100%;
+      min-height: 200px;
+    }
+    &__family {
+      width: 446px;
+      top: unset;
+      bottom: -55px;
+      right: -110px;
+      img {
+        width: 390px;
+      }
+    }
+    &__prod {
+      width: 313px;
+      bottom: -64px;
+      left: 2px;
+    }
+    &__prod-stick {
+      width: 129px;
+      right: 0;
+    }
+  }
+}
+@media all and (max-width: 639px) {
+  .header {
+    &__main-title {
+      margin: 5px 0 10px;
+      font-size: 23px;
+      line-height: 28px;
+      text-align: center;
+    }
+    &__all-bullets {
+      flex-direction: column;
+
+    }
+    &__bullet {
+      max-width: 245px;
+      margin: 0 auto;
+    }
+    &__bullet-text {
+      &:before {
+        width: 18px;
+        height: 18px;
+        left: -25px;
+        background-size: 10px;
+      }
+    }
+    &__product-box {
+      display: block;
+      margin: 0 auto 20px;
+      min-height: 187px;
+    }
+    &__form {
+      display: block;
+      margin: 0 auto;
+    }
+    &__prod {
+      width: 290px;
+      bottom: 0;
+      left: 20px;
+    }
+    &__prod-stick {
+      width: 107px;
+      right: 57px;
+      bottom: 0;
+    }
+    &__family {
+      display: none;
+    }
+  }
 }
